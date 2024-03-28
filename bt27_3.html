@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    // var c1
+    let myNumber = 88
+    console.log(myNumber);
+
+    //var c2
+    let myString = "abcxyz"
+    console.log(myString);
+
+    //var c3
+    let isMale = true
+    console.log("Người này là nam giới.");
+
+    //condition c1
+    let n = prompt("Nhập vào số muốn kiểm tra chẵn/lẻ: ")
+    if (n % 2 == 0){
+        console.log(n + " là số chẵn.");
+    } else {
+        console.log(n + " là số lẻ.");
+    }
+
+    //condition c2
+    let a = prompt("Nhập vào số muốn kiểm tra dương/âm: ")
+    if (a > 0){
+        console.log(a + " là số dương.");
+    } else if (a < 0){
+        console.log(a + " là số âm.");
+    } else {
+        console.log(a);
+    }
+
+    //condition c3
+    let year = prompt("Nhập vào năm muốn kiểm tra: ")
+    if ((year % 400 == 0) || ((year % 4 == 0)&&(year % 100 != 0))){
+        console.log(year + " là năm nhuận.");
+    }
+
+    //loop c1
+    let x = prompt("Nhập vào số n muốn tính tổng đến n: ")
+    let sum = 0
+    let i = 1
+    for(i = 1; i <= x; i++){
+        sum += i;
+    }
+    console.log("Tổng các số nguyên từ 1 đến " + x + " là: " + sum);
+
+    //loop c2
+    let y = prompt("Nhập vào số n muốn tính giai thừa: ")
+    let kq = 1
+    while (i <= y) {
+        kq *= i;
+        i++;
+    }
+    console.log("Giai thừa của "+ y +" là: " + kq);
+
+    //loop c3
+    let j = 1
+    for (i = 1; i <= 9; i++){
+        for (j = 1; j <= 10; j++){
+            console.log(i +" * "+j+" = "+(i*j));
+        }
+    }
+</script>
+</html>
